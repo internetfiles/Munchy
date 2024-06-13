@@ -2,8 +2,23 @@
     <div class="flex justify-start items-center">
         <h2 class="text-white text-xl font-bold">Recent Episodes</h2>
     </div>
+
+    <!-- Adsterra Ad Code Here -->
+    <center>
+        <script type="text/javascript">
+            atOptions = {
+                'key' : 'dde9880ee191a4efc970ae24285b5a23',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//bracemascara.com/dde9880ee191a4efc970ae24285b5a23/invoke.js"></script>
+    </center>
+
     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
-        <% data.slice(0, -4).forEach((i)=> { %>
+        <% data.slice(0, -4).forEach((i) => { %>
             <a href="/episode/<%= i.id %>/<%= i.epid %>" class="group space-y-1">
                 <img src="<%= i.cover %>" alt="<%= i.title %>" title="<%= i.title %>"
                     class="w-full h-52 rounded-sm object-cover group-hover:scale-95">
@@ -14,6 +29,6 @@
                     <%= i.episode %>
                 </p>
             </a>
-            <% }) %>
+        <% }) %>
     </div>
 </div>
