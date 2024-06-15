@@ -216,7 +216,7 @@ router.get("/episode/:id/:episode", async (req, res) => {
         }
         const site = {
             title: `Watching ${data.episode.episode} of ${data.episode.title}`,
-            description: "Discover your new favorite anime on Munchy now! we offer a vast library of high-quality content, accessible on multiple devices and without any interruptions."
+            description: "Discover your new favorite anime on Shinigami now! we offer a vast library of high-quality content, accessible on multiple devices and without any interruptions."
         }
         res.render("stream", { data, info, site });
     } catch (error) {
@@ -228,10 +228,9 @@ router.get("/episode/:id/:episode", async (req, res) => {
 router.get("*", (req, res) => {
     const site = {
         title: "Error Occurred",
-        description: "Discover your new favorite anime on Munchy now! we offer a vast library of high-quality content, accessible on multiple devices and without any interruptions."
+        description: "Discover your new favorite anime on Shinigami now! we offer a vast library of high-quality content, accessible on multiple devices and without any interruptions."
     }
     res.render("error", { site });
 });
 
 module.exports = router
-            
