@@ -20,8 +20,8 @@ router.get("/", async (req, res) => {
             });
         });
         const site = {
-            title: "Munchy",
-            description: "Discover your new favorite anime on Munchy now! we offer a vast library of high-quality content, accessible on multiple devices and without any interruptions."
+            title: "Shinigami",
+            description: "Discover your new favorite anime on Shinigami now! we offer a vast library of high-quality content, accessible on multiple devices and without any interruptions."
         }
         res.render("index", { data, site });
     } catch (error) {
@@ -234,3 +234,4 @@ router.get("*", (req, res) => {
 });
 
 module.exports = router
+            
